@@ -37,8 +37,6 @@ private:
 	sf::RectangleShape r;
 	float sX, sY;		
 	float direction = 1;
-	MyEnum a = DEFAULT;
-	MyEnum b = DEFAULT;
 	sf::Text text;
 
 public:
@@ -90,8 +88,6 @@ private:
 	sf::CircleShape c;
 	float sX, sY;
 	float direction = 1;
-	MyEnum a = DEFAULT;
-	MyEnum b = DEFAULT;
 	sf::Text text;
 public:
 	Circ(const string& name, float posX, float posY, float sX, float sY,
@@ -289,16 +285,6 @@ int main(int argc, char * argv[])
 	sf::RenderWindow window(sf::VideoMode({ WindowWidth,WindowLength }), "Bouncing Shapes");
 	window.setFramerateLimit(60);
 	std::cout << "SFML Version: " << SFML_VERSION_MAJOR << "." << SFML_VERSION_MINOR << "."  << SFML_VERSION_PATCH << std::endl;
-
-	for (int i = 0; i < 128; i++)
-	{
-		for (int j = 0; j < 72; j++)
-		{
-			sf::RectangleShape r({ 10,10 });
-			r.setFillColor(sf::Color(127 + i, 127 + j, i + j));
-			window.draw(r);
-		}
-	}
 
 	while (window.isOpen())
 	{
