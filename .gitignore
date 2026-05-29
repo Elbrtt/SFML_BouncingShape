@@ -1,0 +1,37 @@
+# Build folders
+build/
+x64/
+x86/
+Debug/
+Release/
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# Executables
+*.exe
+*.out
+
+# Object files
+*.obj
+*.o
+
+# Debug files
+*.pdb
+*.ilk
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+
+# Windows
+Thumbs.db
+.DS_Store
